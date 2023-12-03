@@ -1,0 +1,2 @@
+https://www.freecodecamp.org/news/how-to-build-a-movie-recommendation-system-based-on-collaborative-filtering/ - 
+used code for model creating and training procedure

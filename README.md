@@ -1,21 +1,20 @@
 # Practical Machine Learning and Deep Learning - Assignment 2 - Movie Recommender System
 
+## Personal information
+
+Author: Mark Zakharov
+<br>
+Email: ma.zakharov@innopolis.university
+<br>
+Group: BS20-DS
+
 ## Task description
 
 A recommender system is a type of information filtering system that suggests items or content to users based on their interests, preferences, or past behavior. These systems are commonly used in various domains, such as e-commerce, entertainment, social media, and online content platforms.
 
-Your assignment is to create a recommender system of movies for users:
-* Your system should suggest some movies to the user based on user's gemographic information(age, gender, occupation, zip code) and favorite movies (list of movie ids).
-* Solve this task using a machine learning model. You may consider only one model: it will be enough.
-* Create a benchmark that would evaluate the quality of recommendations of your model. Look for commonly used metrics to evaluate a recommender system and use at least one metric.
-* Make a single report decribing data exploration, solution implementation, training process, and evaluation on the benchmark.
-* Explicitly state the benchmark scores of your systems.
-
-Submission should be a link to GitHub repository. It should be open repository, so that the instructors could assess it easily.
-
 ## Data Description
 
-In this assignment you will use [MovieLens 100K dataset](https://grouplens.org/datasets/movielens/100k/) consisting user ratings to movies.
+In this solution I will use [MovieLens 100K dataset](https://grouplens.org/datasets/movielens/100k/) consisting user ratings to movies.
 
 **General information about the dataset:**
 * It consists of 100,000 ratings from 943 users on 1682 movies
@@ -38,24 +37,19 @@ In this assignment you will use [MovieLens 100K dataset](https://grouplens.org/d
 | allbut.pl | The script that generates training and test sets where all but n of a users ratings are in the training data |
 | mku.sh | A shell script to generate all the u data sets from u.data. |
 
-## Evaluation criterias
-
-The repository should have the following structure:
+## Repository structure
 
 ```
 movie-recommender-system
 ├── README.md               # The top-level README
 │
 ├── data
-│   ├── external            # Data from third party sources
 │   ├── interim             # Intermediate data that has been transformed.
 │   └── raw                 # The original, immutable data
 │
 ├── models                  # Trained and serialized models, final checkpoints
 │
-├── notebooks               #  Jupyter notebooks. Naming convention is a number (for ordering),
-│                               and a short delimited description, e.g.
-│                               "1.0-initial-data-exporation.ipynb"            
+├── notebooks               #  Jupyter notebooks with solutions.          
 │ 
 ├── references              # Data dictionaries, manuals, and all other explanatory materials.
 │
@@ -67,44 +61,3 @@ movie-recommender-system
     ├── data                # dataset used for evaluation 
     └── evaluate.py         # script that performs evaluation of the given model
 ```
-
-
-In the top `README.md` file put your name, email and group number.
-
-In the `reports` directory create a report about your work. In the report, describe in details the implementation of your system. Mention its advantages and disadvantages.
-
-### Expected Report Structure
-
-```
-# Introduction
-...
-# Data analysis
-...
-# Model Implementation
-...
-# Model Advantages and Disadvantages
-...
-# Training Process
-...
-# Evaluation
-...
-# Results
-...
-```
-
-In the `notebooks` directory put at least two notebooks. **First notebook** should contain your initial data exploration and basic ideas behind data preprocessing. **Second notebook** should contain information about final solution training and visualization.
-
-## Grading criterias
-
-Full assignment without any problems is said to be the `100%` solution.
-
-| Criteria | Weight (%) | Comment |
-| ---- | ----- | ----- |
-| Structure and code quality | 30 | Code quality, structure, comments, clean repo, commit history, reproducibility (manual seeding) |
-| Visualization, notebooks quality | 10 | Jupyter notebooks, visualizations |
-| Solution building | 40 |  Implementation description, references, final report structure |
-| Final score, evaluation  | 20 | Evaluation function, final score, quality of results |
-
-If **PMLDL Course Team** will have any questions about your assignment or your work fails to show your results you will be called solution defence procedure. 
-
-
